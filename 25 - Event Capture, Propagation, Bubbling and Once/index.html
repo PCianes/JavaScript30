@@ -40,7 +40,7 @@
   }
 </style>
 
-<button></button>
+<button>Click</button>
 <script>
   const divs = document.querySelectorAll('div');
   const button = document.querySelector('button');
@@ -52,7 +52,7 @@
   }
 
   divs.forEach(div => div.addEventListener('click', logText, {
-    capture: false,
+    capture: true,
     once: true
   }));
 
